@@ -4,17 +4,53 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Stylist assistant.  Hello, bootstrap!</title>
+    <title>Stylist assistant. Hello, bootstrap!</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link type="text/css" href="bower_components/jquery-ui/themes/base/jquery-ui.css" rel="stylesheet"/>
+
 </head>
 <body>
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<style>
+    .issues img {
+        width: 120px;
+        height: 120px;
+    }
+</style>
 <div class="container">
     <div class="row" style="">
         <div class="col-sm-4" style="height: 700px; background-color: yellow"></div>
-        <div class="col-sm-8" style="height: 700px;background-color: pink"></div>
+        <div class="col-sm-8" style="height: 700px;background-color: white">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#">Male</a></li>
+                <li role="presentation"><a href="#">Female</a></li>
+                <li role="presentation"><a href="#">Colors</a></li>
+                <li role="presentation"><a href="#">Budget</a></li>
+            </ul>
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="#">1</a></li>
+                <li role="presentation"><a href="#">2</a></li>
+                <li role="presentation"><a href="#">3</a></li>
+                <li role="presentation"><a href="#">4</a></li>
+                <li role="presentation"><a href="#">5</a></li>
+            </ul>
+            <div class="issues" style="border-color: black">
+                <div id="resizable">resizable</div>
+                <img src="dresses/top01.jpg">
+                <img src="dresses/down01.jpg">
+            </div>
+        </div>
     </div>
 </div>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script>
+    $('.issues img').draggable();
+    //$('.issues img').resizable();
+
+    $(document).ready(function () {
+        //$('.issues img').resizable();
+    });
+</script>
 </body>
 </html>
