@@ -16,13 +16,17 @@
         width: 120px;
         height: 120px;
     }
+
+    #active {
+        border-bottom: 1px solid white;
+    }
 </style>
 <div class="container">
     <div class="row" style="">
-        <div class="col-sm-6" style="height: 700px; background-color: white"></div>
-        <div class="col-sm-6" style="height: 700px;background-color: yellow">
+        <div class="col-sm-8" style="height: 700px; background-color: white"></div>
+        <div class="col-sm-4" style="height: 700px;background-color: rgb(223, 242, 231)">
             <ul class="nav nav-pills">
-                <li role="presentation" class="active"><a href="#">Male</a></li>
+                <li role="presentation" id="active"><a href="#">Male</a></li>
                 <li role="presentation"><a href="#">Female</a></li>
                 <li role="presentation"><a href="#">Colors</a></li>
                 <li role="presentation"><a href="#">Budget</a></li>
@@ -37,13 +41,13 @@
             <div id="issues" style="position: relative; border-color: black">
                 <!--<form><input id="screen" type="button" value="screen"></form>-->
 
-                <img id="top01" src="dresses/top01.jpg" style="left: 10px; top: 10px;">
-                <img id="down01" src="dresses/down01.jpg" style="left: 130px; top: 10px">
-                <img id="shoes01" src="dresses/shoes01.jpg" style="left: 250px; top: 10px">
+                <img id="top01" src="dresses/top01.jpg" style="left: 0; top: 10px;">
+                <img id="down01" src="dresses/down01.jpg" style="left: 122px; top: 10px">
+                <img id="shoes01" src="dresses/shoes01.jpg" style="left: 244px; top: 10px">
 
-                <img id="top02" src="dresses/top02.jpg" style="left: 10px; top: 140px">
-                <img id="stop01" src="dresses/stop01.jpg" style="left: 130px; top: 140px">
-                <img id="acc01" src="dresses/acc01.jpg" style="left: 250px; top: 140px">
+                <img id="top02" src="dresses/top02.jpg" style="left: 0; top: 140px">
+                <img id="stop01" src="dresses/stop01.jpg" style="left: 122px; top: 140px">
+                <img id="acc01" src="dresses/acc01.jpg" style="left: 244px; top: 140px">
             </div>
         </div>
     </div>
