@@ -34,8 +34,8 @@
 </style>
 <div class="container">
     <div class="row" style="">
-        <div class="col-sm-8" style="height: 700px; background-color: white"></div>
-        <div class="col-sm-4" style="height: 700px;background-color: #eee">
+        <div id="canvas" class="col-sm-7" style="height: 700px; background-color: white"></div>
+        <div class="col-sm-5" style="height: 700px;background-color: #eee">
             <ul class="nav nav-pills">
                 <li role="presentation" id="active"><a href="#">Male</a></li>
                 <li role="presentation"><a href="#">Female</a></li>
@@ -43,79 +43,89 @@
                 <li role="presentation"><a href="#">Budget</a></li>
             </ul>
             <!--<ul class="nav nav-tabs">-->
-                <!--<li role="presentation" class="active"><a href="#">1</a></li>-->
-                <!--<li role="presentation"><a href="#">2</a></li>-->
-                <!--<li role="presentation"><a href="#">3</a></li>-->
-                <!--<li role="presentation"><a href="#">4</a></li>-->
-                <!--<li role="presentation"><a href="#">5</a></li>-->
+            <!--<li role="presentation" class="active"><a href="#">1</a></li>-->
+            <!--<li role="presentation"><a href="#">2</a></li>-->
+            <!--<li role="presentation"><a href="#">3</a></li>-->
+            <!--<li role="presentation"><a href="#">4</a></li>-->
+            <!--<li role="presentation"><a href="#">5</a></li>-->
             <!--</ul>-->
             <div id="issues" style="position: relative; border-color: black">
-                <!--<form><input id="screen" type="button" value="screen"></form>-->
+                <form><input id="screen" type="button" value="screen"></form>
 
                 <img id="top01" src="dresses/top01.jpg" style="left: 0; top: 10px;">
                 <img id="down01" src="dresses/down01.jpg" style="left: 122px; top: 10px">
-                <img id="shoes01" src="dresses/shoes01.jpg" style="left: 244px; top: 10px">
+                <!--<img id="shoes01" src="dresses/shoes01.jpg" style="left: 244px; top: 10px">-->
 
-                <img id="top02" src="dresses/top02.jpg" style="left: 0; top: 140px">
-                <img id="stop01" src="dresses/stop01.jpg" style="left: 122px; top: 140px">
-                <img id="acc01" src="dresses/acc01.jpg" style="left: 244px; top: 140px">
+                <!--<img id="top02" src="dresses/top02.jpg" style="left: 0; top: 140px">-->
+                <!--<img id="stop01" src="dresses/stop01.jpg" style="left: 122px; top: 140px">-->
+                <!--<img id="acc01" src="dresses/acc01.jpg" style="left: 244px; top: 140px">-->
+                <!--</div>-->
             </div>
         </div>
     </div>
-</div>
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
-<script src="html2canvas.js"></script>
-<script>
-    var modeDrag = true;
-    var issuesSelector = null;
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="html2canvas.js"></script>
+    <script>
+        var modeDrag = true;
+        var issuesSelector = null;
 
-
-
-    $('#issues').click(function (e) {
-        issuesSelector = $(e.target);
-//        issuesSelector.hide();
-//        issuesSelector.draggable('destroy');
-//        issuesSelector.resizable();
-
-        if (modeDrag) {
-//            alert(e+'resizableMode - turned on');
-            modeDrag = false;
-            issuesSelector.draggable('destroy');
-            issuesSelector.resizable();
+        //    $('#issues').click(function (e) {
+        //        issuesSelector = $(e.target);
+        ////        issuesSelector.hide();
+        ////        issuesSelector.draggable('destroy');
+        ////        issuesSelector.resizable();
+        //
+        //        if (modeDrag) {
+        ////            alert(e+'resizableMode - turned on');
+        //            modeDrag = false;
+        //            issuesSelector.draggable('destroy');
+        //            issuesSelector.resizable();
+        //        }
+        //        else {
+        ////            alert('modeDrag - turned on');
+        //            modeDrag = true;
+        //            issuesSelector.resizable('destroy');
+        //            issuesSelector.draggable();
+        //        }
+        //    });
+        //$('.issues img').draggable();
+        function addIssue(e) {
+            //alert(e.target + " This will be displayed only once");
+            $(this).clone().draggable().
+                appendTo($('#canvas'));
         }
-        else {
-//            alert('modeDrag - turned on');
-            modeDrag = true;
-            issuesSelector.resizable('destroy');
-            issuesSelector.draggable();
-        }
-    });
-    //$('.issues img').draggable();
-    $('#top01').draggable();
-    $('#top02').draggable();
-    $('#stop01').draggable();
-    $('#down01').draggable();
-    $('#shoes01').draggable();
-    $('#acc01').draggable();
+
+        $('#top01').one("click", addIssue);
+        $('#down01').one("click", addIssue);
+
+        //            function () {
+        //        alert("This will be displayed only once.")
+        //    });
+
+        //    $('#top02').draggable();
+        //    $('#stop01').draggable();
+        //    $('#down01').draggable();
+        //    $('#shoes01').draggable();
+        //    $('#acc01').draggable();
 
 
-    $(document).ready(function () {
-        //$('.issues img').resizable();
-    });
+        $('#screen').click(function () {
+            alert("screen");
+            html2canvas(document.getElementById("canvas"), {
+                onrendered: function (canvas) {
+                    document.body.appendChild(canvas);
+                    console.log(canvas);
+                }
+            });
+        });
 
-//    $('#screen').click(function () {
-//        alert("screen");
-//        html2canvas(document.body, {
-//            onrendered: function (canvas) {
-//                document.body.appendChild(canvas);
-//            },
-//            width: 400,
-//            height: 300
-//        });
-//    });
-</script>
+        $(document).ready(function () {
+            //$('.issues img').resizable();
+        });
+
+    </script>
 </body>
 </html>
 
