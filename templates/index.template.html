@@ -129,7 +129,7 @@
                     document.body.appendChild(canvas);
                     var dataURL = canvas.toDataURL();
                     console.log(dataURL);
-                    $.post('/upload',{img:dataURL});
+                    $.post('upload',{img:dataURL});
                     //save2server(canvas);
                 }
             });
