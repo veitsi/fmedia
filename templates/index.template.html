@@ -115,7 +115,7 @@
             var photo = canvas.toDataURL('image/jpeg');
             $.ajax({
                 method: 'POST',
-                url: 'photo_upload.php',
+                url: 'upload',
                 data: {
                     photo: photo
                 }
@@ -127,7 +127,10 @@
             html2canvas(document.getElementById("canvas"), {
                 onrendered: function (canvas) {
                     document.body.appendChild(canvas);
-                    save2server(canvas);
+                    var dataURL = canvas.toDataURL();
+                    console.log(dataURL);
+                    $.post('/upload',{img:dataURL});
+                    //save2server(canvas);
                 }
             });
         });
