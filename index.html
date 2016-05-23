@@ -93,8 +93,7 @@
         //$('.issues img').draggable();
         function addIssue(e) {
             //alert(e.target + " This will be displayed only once");
-            $(this).clone().draggable().
-                appendTo($('#canvas'));
+            $(this).clone().draggable().appendTo($('#canvas'));
         }
 
         $('#top01').one("click", addIssue);
@@ -110,13 +109,25 @@
         //    $('#shoes01').draggable();
         //    $('#acc01').draggable();
 
+//http://stackoverflow.com/questions/13198131/how-to-save-a-html5-canvas-as-image-on-a-server
+ 
+        function save2server(canvas) {
+            var photo = canvas.toDataURL('image/jpeg');
+            $.ajax({
+                method: 'POST',
+                url: 'photo_upload.php',
+                data: {
+                    photo: photo
+                }
+            });
+        }
 
         $('#screen').click(function () {
             alert("screen");
             html2canvas(document.getElementById("canvas"), {
                 onrendered: function (canvas) {
                     document.body.appendChild(canvas);
-                    console.log(canvas);
+                    save2server(canvas);
                 }
             });
         });
