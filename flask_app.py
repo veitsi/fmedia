@@ -22,8 +22,8 @@ def upload():
     print('we have some POST from you')
     img = request.form['img'][22:]
     print(img)
-    f=open('current.png','wb')
-    f.write(base64.b64decode(img))
+    f=open('current.png','w')
+    f.write('www') #base64.b64decode(img))
     f.close()
     return "Uploaded"
 
