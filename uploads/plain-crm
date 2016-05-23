@@ -1,0 +1,22 @@
+A.app({
+  appName: "plain CRM",
+  appIcon: "heart",
+  menuItems: [
+    {
+      name: "Gclients",
+      icon: "gift",
+      entityTypeId: "Gift",
+    }
+  ],
+  entities: function(Fields) {
+    return {
+      Gift: {
+        title: 'Clients',
+        fields: {
+          item: Fields.text("Item").required(),
+          date: Fields.date("Giving Date").required()
+        }
+      }
+    }
+  }
+});
