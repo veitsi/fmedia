@@ -27,7 +27,7 @@ def hello_world():
 
 @app.route('/looks')
 def looks():
-    log('we are in  '+os.curdir)
+    log('we are in  '+os.getcwd())
     log('search for files in '+ os.listdir(app.config['UPLOAD_FOLDER']))
     return render_template("looks.template.html"
                            , files=os.listdir(app.config['UPLOAD_FOLDER']))
