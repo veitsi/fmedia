@@ -6,7 +6,7 @@ import base64
 import random, string, os
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = '/fmedia/static/uploads/'
+app.config['UPLOAD_FOLDER'] = 'fmedia/static/uploads/'
 
 
 def randomword(length):
@@ -40,9 +40,11 @@ def upload_start():
 # Route that will process the file upload
 @app.route('/upload', methods=['POST'])
 def upload():
-    log('we try to save')
+
     img = request.form['img'][22:]
-    f = open(app.config['UPLOAD_FOLDER'] + randomword(20) + '.png', 'wb')
+    fname=app.config['UPLOAD_FOLDER'] + randomword(20) + '.png'
+    log('we try to save in '+fname)
+    f = open(fname, 'wb')
     f.write(base64.b64decode(img))
     f.close()
     log("Uploaded")
