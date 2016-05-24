@@ -6,7 +6,7 @@ import base64
 import random, string, os
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'fmedia/static/uploads'
+app.config['UPLOAD_FOLDER'] = 'static/uploads'
 app.config['UPLOAD_FOLDER'] = '/home/shopeiro/fmedia/static/uploads'
 
 def randomword(length):
@@ -28,7 +28,7 @@ def hello_world():
 @app.route('/looks')
 def looks():
     log('we are in  '+os.getcwd())
-    log('search for files in '+ os.listdir(app.config['UPLOAD_FOLDER']))
+    log('search for files in '+ app.config['UPLOAD_FOLDER'])
     return render_template("looks.template.html"
                            , files=os.listdir(app.config['UPLOAD_FOLDER']))
 
