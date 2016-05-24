@@ -36,12 +36,12 @@
     <div class="row" style="">
         <div id="canvas" class="col-sm-7" style="height: 700px; background-color: white"></div>
         <div class="col-sm-5" style="height: 700px;background-color: #eee">
-            <ul class="nav nav-pills">
-                <li role="presentation" id="active"><a href="#">Male</a></li>
-                <li role="presentation"><a href="#">Female</a></li>
-                <li role="presentation"><a href="#">Colors</a></li>
-                <li role="presentation"><a href="#">Budget</a></li>
-            </ul>
+            <!--<ul class="nav nav-pills">-->
+            <!--<li role="presentation" id="active"><a href="#">Male</a></li>-->
+            <!--<li role="presentation"><a href="#">Female</a></li>-->
+            <!--<li role="presentation"><a href="#">Colors</a></li>-->
+            <!--<li role="presentation"><a href="#">Budget</a></li>-->
+            <!--</ul>-->
             <!--<ul class="nav nav-tabs">-->
             <!--<li role="presentation" class="active"><a href="#">1</a></li>-->
             <!--<li role="presentation"><a href="#">2</a></li>-->
@@ -49,16 +49,17 @@
             <!--<li role="presentation"><a href="#">4</a></li>-->
             <!--<li role="presentation"><a href="#">5</a></li>-->
             <!--</ul>-->
+            <form><input id="screen" type="button" value="screen"></form>
+
             <div id="issues" style="position: relative; border-color: black">
-                <form><input id="screen" type="button" value="screen"></form>
 
                 <img id="top01" src="static/dresses/top01.jpg" style="left: 0; top: 10px;">
                 <img id="down01" src="static/dresses/down01.jpg" style="left: 122px; top: 10px">
-                <!--<img id="shoes01" src="dresses/shoes01.jpg" style="left: 244px; top: 10px">-->
+                <img id="shoes01" src="static/dresses/shoes01.jpg" style="left: 244px; top: 10px">
 
                 <!--<img id="top02" src="dresses/top02.jpg" style="left: 0; top: 140px">-->
                 <!--<img id="stop01" src="dresses/stop01.jpg" style="left: 122px; top: 140px">-->
-                <!--<img id="acc01" src="dresses/acc01.jpg" style="left: 244px; top: 140px">-->
+                <img id="acc01" src="static/dresses/acc01.jpg" style="left: 244px; top: 140px">
                 <!--</div>-->
             </div>
         </div>
@@ -98,6 +99,8 @@
 
         $('#top01').one("click", addIssue);
         $('#down01').one("click", addIssue);
+        $('#shoes01').one("click", addIssue);
+        $('#acc01').one("click", addIssue);
 
         //            function () {
         //        alert("This will be displayed only once.")
@@ -109,18 +112,7 @@
         //    $('#shoes01').draggable();
         //    $('#acc01').draggable();
 
-//http://stackoverflow.com/questions/13198131/how-to-save-a-html5-canvas-as-image-on-a-server
-
-        function save2server(canvas) {
-            var photo = canvas.toDataURL('image/jpeg');
-            $.ajax({
-                method: 'POST',
-                url: 'upload',
-                data: {
-                    photo: photo
-                }
-            });
-        }
+        //http://stackoverflow.com/questions/13198131/how-to-save-a-html5-canvas-as-image-on-a-server
 
         $('#screen').click(function () {
             alert("screen");
@@ -129,15 +121,13 @@
                     document.body.appendChild(canvas);
                     var dataURL = canvas.toDataURL();
                     console.log(dataURL);
-                    $.post('upload',{img:dataURL});
+                    $.post('upload', {img: dataURL});
                     //save2server(canvas);
                 }
             });
         });
 
-        $(document).ready(function () {
-            //$('.issues img').resizable();
-        });
+
 
     </script>
 </body>
