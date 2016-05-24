@@ -8,8 +8,15 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads/'
 
 
+def log(msg):
+    f = open('log.txt', 'a')
+    f.write(msg + "\n")
+    f.close()
+
+
 @app.route('/')
 def hello_world():
+    log('we start /')
     return render_template('index.template.html')
 
 
@@ -22,13 +29,13 @@ def upload_start():
 # Route that will process the file upload
 @app.route('/upload', methods=['POST'])
 def upload():
-    print('we have some POST from you')
+    log('we have some POST from you')
     img = request.form['img'][22:]
     print(img)
     f = open('current.png', 'wb')
     f.write(base64.b64decode(img))
     f.close()
-    return "Uploaded"
+    log("Uploaded")
 
     # Get the name of the uploaded file
     # Check if the file is one of the allowed types/extensions
@@ -43,6 +50,7 @@ def upload():
     # redirect(url_for('uploaded_file',
     #                     filename=filename))
 
+
 # make comment for pythonanywhere
-# if __name__ == "__main__":
-#     app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
