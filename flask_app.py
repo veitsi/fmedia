@@ -32,8 +32,9 @@ def upload_start():
 # Route that will process the file upload
 @app.route('/upload', methods=['POST'])
 def upload():
+    log('we try to save')
     img = request.form['img'][22:]
-    f = open('uploads/'+randomword(20)+'.png', 'wb')
+    f = open('fmedia/uploads/'+randomword(20)+'.png', 'wb')
     f.write(base64.b64decode(img))
     f.close()
     log("Uploaded")
