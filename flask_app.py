@@ -1,20 +1,18 @@
-# A very simple Flask Hello World app for you to get started with...
-import os
 from flask import Flask, render_template, \
     request, redirect, url_for, send_from_directory
 import base64
 import random, string, os
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'static/uploads'
-app.config['UPLOAD_FOLDER'] = '/home/shopeiro/fmedia/static/uploads'
+app.config['UPLOAD_FOLDER'] = 'static/uploads/'
+#app.config['UPLOAD_FOLDER'] = '/home/shopeiro/fmedia/static/uploads'
 
 def randomword(length):
     return ''.join(random.choice(string.ascii_lowercase) for i in range(length))
 
 
 def log(msg):
-    f = open('log.txt', 'a')
+    f = open("log.txt", "a")
     f.write(msg + "\n")
     f.close()
 
@@ -49,7 +47,6 @@ def upload():
     f.close()
     log("Uploaded")
 
-
 # make comment for pythonanywhere
-# if __name__ == "__main__":
-#     app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
