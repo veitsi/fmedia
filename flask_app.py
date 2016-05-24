@@ -29,8 +29,7 @@ def hello_world():
 def looks():
     log('we are in  '+os.getcwd())
     log('search for files in '+ app.config['UPLOAD_FOLDER'])
-    return render_template("looks.template.html"
-                           , files=os.listdir(app.config['UPLOAD_FOLDER']))
+    return render_template("looks.template.html",files=os.listdir(app.config['UPLOAD_FOLDER']))
 
 
 @app.route('/upload', methods=['GET'])
