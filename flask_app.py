@@ -5,7 +5,7 @@ import random, string, os
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'static/uploads/'
-#app.config['UPLOAD_FOLDER'] = '/home/shopeiro/fmedia/static/uploads'
+app.config['UPLOAD_FOLDER'] = '/home/shopeiro/fmedia/static/uploads'
 
 def randomword(length):
     return ''.join(random.choice(string.ascii_lowercase) for i in range(length))
@@ -48,5 +48,5 @@ def upload():
     log("Uploaded")
 
 # make comment for pythonanywhere
-if __name__ == "__main__":
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     app.run(debug=True)
