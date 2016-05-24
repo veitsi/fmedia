@@ -6,7 +6,7 @@ import base64
 import random, string, os
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'fmedia/static/uploads/'
+app.config['UPLOAD_FOLDER'] = 'fmedia/static/uploads'
 
 
 def randomword(length):
@@ -27,8 +27,10 @@ def hello_world():
 
 @app.route('/looks')
 def looks():
+    log('we are in  '+os.curdir)
+    log('search for files in '+ os.listdir(app.config['UPLOAD_FOLDER']))
     return render_template("looks.template.html"
-                           , files=(os.listdir(app.config['UPLOAD_FOLDER'])))
+                           , files=os.listdir(app.config['UPLOAD_FOLDER']))
 
 
 @app.route('/upload', methods=['GET'])
@@ -40,7 +42,6 @@ def upload_start():
 # Route that will process the file upload
 @app.route('/upload', methods=['POST'])
 def upload():
-
     img = request.form['img'][22:]
     fname=app.config['UPLOAD_FOLDER'] + randomword(20) + '.png'
     log('we try to save in '+fname)
