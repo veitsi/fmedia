@@ -7,7 +7,7 @@ import random, string, os
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'fmedia/static/uploads'
-
+app.config['UPLOAD_FOLDER'] = '/home/shopeiro/fmedia/static/uploads'
 
 def randomword(length):
     return ''.join(random.choice(string.ascii_lowercase) for i in range(length))
