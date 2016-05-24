@@ -4,7 +4,6 @@ from flask import Flask, render_template, \
     request, redirect, url_for, send_from_directory
 import base64
 import random, string, os
-from names import names
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'static/uploads/'
@@ -50,5 +49,5 @@ def upload():
 
 
 # make comment for pythonanywhere
-if __name__ == "__main__":
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     app.run(debug=True)
