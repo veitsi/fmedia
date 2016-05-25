@@ -45,7 +45,7 @@ def upload_start():
 @app.route('/upload', methods=['POST'])
 def upload():
     img = request.form['img'][22:]
-    fname=app.config['UPLOAD_FOLDER'] + randomword(20) + '.png'
+    fname=app.config['UPLOAD_FOLDER'] + "/"+randomword(20) + '.png'
     log('we try to save in '+fname)
     f = open(fname, 'wb')
     f.write(base64.b64decode(img))
