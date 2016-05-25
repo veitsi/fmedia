@@ -30,11 +30,21 @@
     #active {
         border-bottom: 1px solid white;
     }
+    #canvas {
+        position: relative;
+        margin: auto;
+        border: 1px solid black;
+        background-color: white;
+        width: 200px;
+        height: 400px;
+    }
 </style>
 <div class="container">
     <div class="row">
-        <div id="canvas" class="col-sm-7" style="height: 700px; background-color: white"></div>
-        <div id="right-side" class="col-sm-5" style="height: 700px;background-color: #eee">
+        <div id="canvas-container" class="col-sm-7" style="height: 100vh; background-color: white">
+            <div id="canvas"></div>
+        </div>
+        <div id="right-side" class="col-sm-5" style="height: 100vh;background-color: #eee">
             <!--menu was here and mooved to bottom-->
             <form><input id="screen" type="button" value="screen"></form>
             <div id="issues" style="position: relative; border-color: black">
