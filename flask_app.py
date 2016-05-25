@@ -1,11 +1,16 @@
 from flask import Flask, render_template, \
     request, redirect, url_for, send_from_directory
 import base64
-import random, string, os
+import random, string, os, datetime
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'static/uploads/'
-app.config['UPLOAD_FOLDER'] = '/home/shopeiro/fmedia/static/uploads'
+local_mode=os.getenv('USER')=='pydev'
+app.config['UPLOAD_FOLDER'] =\
+    '/home/shopeiro/fmedia/static/uploads' #default for pythonanywhere
+if local_mode:
+    print('start in local mode')
+    app.config['UPLOAD_FOLDER'] = 'static/uploads/'
+
 
 def randomword(length):
     return ''.join(random.choice(string.ascii_lowercase) for i in range(length))
@@ -13,13 +18,13 @@ def randomword(length):
 
 def log(msg):
     f = open("log.txt", "a")
-    f.write(msg + "\n")
+    f.write(str(datetime.datetime.now().isoformat())+":"+msg + "\n")
     f.close()
 
 
 @app.route('/')
 def hello_world():
-    log('we start /' + randomword(20))
+    log('we start /')
     return render_template('index.template.html')
 
 
@@ -45,8 +50,8 @@ def upload():
     f = open(fname, 'wb')
     f.write(base64.b64decode(img))
     f.close()
-    log("Uploaded")
+    log(fname+" Uploaded")
 
 # make comment for pythonanywhere
-# if __name__ == "__main__":
-#     app.run(debug=True)
+if local_mode and __name__ == "__main__":
+    app.run(debug=True)
