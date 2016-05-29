@@ -5,7 +5,7 @@
     <company>ABC inc.</company>
     <url>http://www.abc.ru/</url>
     <currencies>
-      <currency id="RUR" rate="1"/>
+      <currency id="UAH" rate="1"/>
       <currency id="USD" rate="80"/>
     </currencies>
     <categories>
@@ -69,8 +69,8 @@
         <barcode>7564756475648</barcode>
         <age>0</age>
         <manufacturer_warranty>true</manufacturer_warranty>
-        <param name="Тип">12344</param>
-        <param name="Материал">asdfgadfg</param>
+        <param name="Тип">уши</param>
+        <param name="Материал">полимер цинка</param>
         <param name="Wi-Fi" unit="">ага</param>
         <param name="Размер экрана" unit="дюйм">27</param>
         <param name="Размер оперативной памяти" unit="Мб">4096</param>
