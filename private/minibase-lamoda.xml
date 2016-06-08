@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<yml_catalog date="2016-02-05 17:22">
+    <shop>
+        <name>ABC</name>
+        <company>ABC inc.</company>
+        <url>http://www.abc.ru/</url>
+        <currencies>
+            <currency id="UAH" rate="1"/>
+            <currency id="USD" rate="80"/>
+        </currencies>
+        <categories>
+            <category id="1278">Электроника</category>
+            <category id="3761" parentId="1278">Телевизоры</category>
+            <category id="1553" parentId="3761">Медиа-плееры</category>
+            <category id="3798">Бытовая техника</category>
+            <category id="1293" parentId="3798">Холодильники</category>
+        </categories>
+        <delivery-options>
+            <option cost="500" days="0" order-before="15"/>
+            <option cost="300" days="1-3"/>
+        </delivery-options>
+        <cpa>1</cpa>
+        <offers>
+            <offer available="false" group_id="872757" type="vendor.model" id="AD006EWIHC85INM">
+                <url>http://www.lamoda.ua/p/AD006EWIHC85/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=AD006EWIHC85INM&amp;utm_content=ch_yandex_market__cid_21251569__cat_2993&amp;no_overlay=1</url>
+                <price>960.0</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1378</categoryId>
+                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Футболки и топы</market_category>
+                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC85_1_v2.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC85_6_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC85_7_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC85_8_v1.jpg</picture>
+                <store>false</store>
+                <pickup>false</pickup>
+                <delivery>true</delivery>
+                <typePrefix>Топ</typePrefix>
+                <vendor>adL</vendor>
+                <vendorCode>11522965005</vendorCode>
+                <model>11522965005</model>
+                <description>Топ adL. Цвет: черный. Сезон: Весна-лето 2016.</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <param name="Цвет">черный</param>
+                <param name="Коллекция">Весна-лето 2016</param>
+                <param name="Сезонность">Мульти</param>
+                <param name="Страна-изготовитель">Китай</param>
+                <param name="Размер" unit="INT">44</param>
+                <param name="Пол">Женский</param>
+                <param name="Возраст">Взрослый</param>
+            </offer>
+            <offer available="false" group_id="872757" type="vendor.model" id="AD006EWIHC85INL">
+                <url>http://www.lamoda.ua/p/AD006EWIHC85/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=AD006EWIHC85INL&amp;utm_content=ch_yandex_market__cid_21251569__cat_2993&amp;no_overlay=1</url>
+                <price>250.0</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1378</categoryId>
+                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Футболки и топы</market_category>
+                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC85_1_v2.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC85_6_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC85_7_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC85_8_v1.jpg</picture>
+                <store>false</store>
+                <pickup>false</pickup>
+                <delivery>true</delivery>
+                <typePrefix>Топ</typePrefix>
+                <vendor>adL</vendor>
+                <vendorCode>11522965005</vendorCode>
+                <model>11522965005</model>
+                <description>Топ adL. Цвет: черный. Сезон: Весна-лето 2016.</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <param name="Цвет">черный</param>
+                <param name="Коллекция">Весна-лето 2016</param>
+                <param name="Сезонность">Мульти</param>
+                <param name="Страна-изготовитель">Китай</param>
+                <param name="Размер" unit="INT">46</param>
+                <param name="Пол">Женский</param>
+                <param name="Возраст">Взрослый</param>
+            </offer>
+            <offer available="false" group_id="872759" type="vendor.model" id="AD006EWIHC87INXS">
+                <url>http://www.lamoda.ua/p/AD006EWIHC87/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=AD006EWIHC87INXS&amp;utm_content=ch_yandex_market__cid_21251569__cat_2993&amp;no_overlay=1</url>
+                <price>311.0</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1378</categoryId>
+                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Футболки и топы</market_category>
+                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_1_v2.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_6_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_7_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_8_v1.jpg</picture>
+                <store>false</store>
+                <pickup>false</pickup>
+                <delivery>true</delivery>
+                <typePrefix>Топ</typePrefix>
+                <vendor>adL</vendor>
+                <vendorCode>11522965005</vendorCode>
+                <model>11522965005</model>
+                <description>Топ adL. Цвет: синий. Сезон: Весна-лето 2016.</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <param name="Цвет">синий</param>
+                <param name="Коллекция">Весна-лето 2016</param>
+                <param name="Сезонность">Мульти</param>
+                <param name="Страна-изготовитель">Китай</param>
+                <param name="Размер" unit="INT">40</param>
+                <param name="Пол">Женский</param>
+                <param name="Возраст">Взрослый</param>
+            </offer>
+            <offer available="false" group_id="872759" type="vendor.model" id="AD006EWIHC87INS">
+                <url>http://www.lamoda.ua/p/AD006EWIHC87/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=AD006EWIHC87INS&amp;utm_content=ch_yandex_market__cid_21251569__cat_2993&amp;no_overlay=1</url>
+                <price>960.0</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1378</categoryId>
+                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Футболки и топы</market_category>
+                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_1_v2.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_6_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_7_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_8_v1.jpg</picture>
+                <store>false</store>
+                <pickup>false</pickup>
+                <delivery>true</delivery>
+                <typePrefix>Топ</typePrefix>
+                <vendor>adL</vendor>
+                <vendorCode>11522965005</vendorCode>
+                <model>11522965005</model>
+                <description>Топ adL. Цвет: синий. Сезон: Весна-лето 2016.</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <param name="Цвет">синий</param>
+                <param name="Коллекция">Весна-лето 2016</param>
+                <param name="Сезонность">Мульти</param>
+                <param name="Страна-изготовитель">Китай</param>
+                <param name="Размер" unit="INT">42</param>
+                <param name="Пол">Женский</param>
+                <param name="Возраст">Взрослый</param>
+            </offer>
+            <offer available="false" group_id="872759" type="vendor.model" id="AD006EWIHC87INM">
+                <url>http://www.lamoda.ua/p/AD006EWIHC87/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=AD006EWIHC87INM&amp;utm_content=ch_yandex_market__cid_21251569__cat_2993&amp;no_overlay=1</url>
+                <price>960.0</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1378</categoryId>
+                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Футболки и топы</market_category>
+                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_1_v2.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_6_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_7_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_8_v1.jpg</picture>
+                <store>false</store>
+                <pickup>false</pickup>
+                <delivery>true</delivery>
+                <typePrefix>Топ</typePrefix>
+                <vendor>adL</vendor>
+                <vendorCode>11522965005</vendorCode>
+                <model>11522965005</model>
+                <description>Топ adL. Цвет: синий. Сезон: Весна-лето 2016.</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <param name="Цвет">синий</param>
+                <param name="Коллекция">Весна-лето 2016</param>
+                <param name="Сезонность">Мульти</param>
+                <param name="Страна-изготовитель">Китай</param>
+                <param name="Размер" unit="INT">44</param>
+                <param name="Пол">Женский</param>
+                <param name="Возраст">Взрослый</param>
+            </offer>
+        </offers>
+    </shop>
+</yml_catalog>
