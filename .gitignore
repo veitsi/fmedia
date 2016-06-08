@@ -1,2 +1,6 @@
 .idea/
+.meteor
+.meteor/
+private/static/bower_components
+private/static/uploads
 database-lamoda.xml

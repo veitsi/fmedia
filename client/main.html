@@ -1,0 +1,15 @@
+<head>
+    <title>simple</title>
+</head>
+<body>
+<h3>Here are your issues:</h3>
+{{> issues}}
+</body>
+
+<template name="issues">
+   <ul>
+    {{#each mobj}}
+        <li><i>{{_id}}</i> with {{name}}</li>
+    {{/each}}
+</ul>
+</template>
