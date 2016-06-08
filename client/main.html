@@ -7,9 +7,8 @@
 </body>
 
 <template name="issues">
-   <ul>
-    {{#each mobj}}
-        <li><i>{{_id}}</i> with {{name}}</li>
-    {{/each}}
-</ul>
+    <ul>
+        {{#each mobj}}
+        <li><i>{{_id}}</i> with {{name}}-{{pickup}}{{/each}}</li>
+    </ul>
 </template>
