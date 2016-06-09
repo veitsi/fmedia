@@ -7,11 +7,13 @@ def key2value_str(key, value):
 
 assert key2value_str('_id', 123456) == "'_id':'123456'"
 
+def lamoda_pathandfile(url):
+    return url[19:]
 
 def node2json(node):
     rez = "{"
     # print(node.tag, node.keys(), node.values())
-    rez += key2value_str('_id:', node.get('id')[:14])
+    rez += key2value_str('_id', node.get('id')[:14])
     pictures_mode = False
     for subnode in node:
         # print(subnode.tag, subnode.keys(), subnode.values(), subnode.text)
@@ -54,7 +56,7 @@ sizes = {}
 jsons = {}
 print(len(nodes))
 fb = open("../server/database.js", "w")
-fb.write("var objects=[\n")
+fb.write("objects=[\n")
 for i in range(len(nodes)):  # Перебираем элементы
     # fb.write(node2json(nodes[i]))
     # fb.write(",\n")
