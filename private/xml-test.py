@@ -11,8 +11,7 @@ assert key2value_str('_id', 123456) == "'_id':'123456'"
 def node2json(node):
     rez = "{"
     # print(node.tag, node.keys(), node.values())
-    rez += key2value_str('_id:', node.get('id'))
-    # if len(node)!=25:
+    rez += key2value_str('_id:', node.get('id')[:14])
     pictures_mode = False
     for subnode in node:
         # print(subnode.tag, subnode.keys(), subnode.values(), subnode.text)
@@ -27,9 +26,9 @@ def node2json(node):
             else:
                 pictures_mode = True
                 rez = rez + ",pictures:['" + subnode.text + "'"
-        elif subnode.tag == "param":
+        elif subnode.tag == "param" and len(subnode.keys()) != 2:
             rez = rez + "," + key2value_str(subnode.values()[0], subnode.text)
-    rez = rez + "}"
+
     return rez
 
 
@@ -52,8 +51,9 @@ nodes = tree.xpath('/yml_catalog/shop/offers/offer')
 folded_nodes = {}
 prices = {}
 sizes = {}
+jsons = {}
 print(len(nodes))
-fb = open("database.js", "w")
+fb = open("../server/database.js", "w")
 fb.write("var objects=[\n")
 for i in range(len(nodes)):  # Перебираем элементы
     # fb.write(node2json(nodes[i]))
@@ -66,16 +66,27 @@ for i in range(len(nodes)):  # Перебираем элементы
         folded_nodes[current] = 1
         prices[current] = current_price
         sizes[current] = current_size
+        jsons[current] = node2json(nodes[i])
     else:
         folded_nodes[current] += 1
         if current_price > prices[current]:
             prices[current] = current_price
         sizes[current] = sizes[current] + "," + current_size
-    print(nodes[i].get('id'), current, issue_price(nodes[i]), issue_size(nodes[i]))
+    print(current, issue_price(nodes[i]), issue_size(nodes[i]), jsons[current])  # nodes[i].get('id'),
 
+    # folded_nodes[i]=folded_nodes[i]+1
 print(len(folded_nodes))
 print(folded_nodes)
 print(prices)
 print(sizes)
+
+for current in folded_nodes.keys():
+    json = jsons[current] + ",'price':'" + str(prices[current]) + "','sizes':[" + sizes[current] + "]}"
+    print(json)
+    if current != list(folded_nodes.keys())[-1]:
+        fb.write(json + ",\n")
+    else:
+        fb.write(json + "\n")
+
 fb.write("];")
 fb.close()
