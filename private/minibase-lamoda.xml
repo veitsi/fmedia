@@ -21,138 +21,325 @@
         </delivery-options>
         <cpa>1</cpa>
         <offers>
-            <offer available="false" group_id="872757" type="vendor.model" id="AD006EWIHC85INM">
-                <url>http://www.lamoda.ua/p/AD006EWIHC85/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=AD006EWIHC85INM&amp;utm_content=ch_yandex_market__cid_21251569__cat_2993&amp;no_overlay=1</url>
-                <price>960.0</price>
+            <offer available="false" group_id="925148" type="vendor.model" id="MI052EWISL34B100">
+                <url>http://www.lamoda.ua/p/MI052EWISL34/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=MI052EWISL34B100&amp;utm_content=ch_yandex_market__cid_21251569__cat_2640&amp;no_overlay=1</url>
+                <price>807.0</price>
+                <oldprice>1010.0</oldprice>
                 <currencyId>UAH</currencyId>
-                <categoryId>1378</categoryId>
-                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Футболки и топы</market_category>
-                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC85_1_v2.jpg</picture>
-                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC85_6_v1.jpg</picture>
-                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC85_7_v1.jpg</picture>
-                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC85_8_v1.jpg</picture>
+                <categoryId>1365</categoryId>
+                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Платья</market_category>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL34_1_v2.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL34_6_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL34_7_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL34_8_v1.jpg</picture>
                 <store>false</store>
                 <pickup>false</pickup>
                 <delivery>true</delivery>
-                <typePrefix>Топ</typePrefix>
-                <vendor>adL</vendor>
-                <vendorCode>11522965005</vendorCode>
-                <model>11522965005</model>
-                <description>Топ adL. Цвет: черный. Сезон: Весна-лето 2016.</description>
+                <typePrefix>Платье</typePrefix>
+                <vendor>Missi London</vendor>
+                <vendorCode>MC2067</vendorCode>
+                <model>MC2067</model>
+                <description>Платье Missi London. Цвет: мультиколор. Сезон: Весна-лето 2016.</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <param name="Цвет">разноцветный</param>
+                <param name="Коллекция">Весна-лето 2016</param>
+                <param name="Сезонность">Лето</param>
+                <param name="Страна-изготовитель">Китай</param>
+                <param name="Размер" unit="UK">46</param>
+                <param name="Пол">Женский</param>
+                <param name="Возраст">Взрослый</param>
+            </offer>
+            <offer available="false" group_id="925148" type="vendor.model" id="MI052EWISL34B120">
+                <url>http://www.lamoda.ua/p/MI052EWISL34/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=MI052EWISL34B120&amp;utm_content=ch_yandex_market__cid_21251569__cat_2640&amp;no_overlay=1</url>
+                <price>807.0</price>
+                <oldprice>1010.0</oldprice>
+                <currencyId>UAH</currencyId>
+                <categoryId>1365</categoryId>
+                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Платья</market_category>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL34_1_v2.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL34_6_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL34_7_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL34_8_v1.jpg</picture>
+                <store>false</store>
+                <pickup>false</pickup>
+                <delivery>true</delivery>
+                <typePrefix>Платье</typePrefix>
+                <vendor>Missi London</vendor>
+                <vendorCode>MC2067</vendorCode>
+                <model>MC2067</model>
+                <description>Платье Missi London. Цвет: мультиколор. Сезон: Весна-лето 2016.</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <param name="Цвет">разноцветный</param>
+                <param name="Коллекция">Весна-лето 2016</param>
+                <param name="Сезонность">Лето</param>
+                <param name="Страна-изготовитель">Китай</param>
+                <param name="Размер" unit="UK">48</param>
+                <param name="Пол">Женский</param>
+                <param name="Возраст">Взрослый</param>
+            </offer>
+            <offer available="false" group_id="918931" type="vendor.model" id="MI052EWISL35B100">
+                <url>http://www.lamoda.ua/p/MI052EWISL35/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=MI052EWISL35B100&amp;utm_content=ch_yandex_market__cid_21251569__cat_2626&amp;no_overlay=1</url>
+                <price>757.0</price>
+                <oldprice>1010.0</oldprice>
+                <currencyId>UAH</currencyId>
+                <categoryId>1364</categoryId>
+                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Платья</market_category>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL35_1_v2.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL35_6_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL35_8_v1.jpg</picture>
+                <store>false</store>
+                <pickup>false</pickup>
+                <delivery>true</delivery>
+                <typePrefix>Платье</typePrefix>
+                <vendor>Missi London</vendor>
+                <vendorCode>MC2067</vendorCode>
+                <model>MC2067</model>
+                <description>Платье Missi London. Цвет: мультиколор. Сезон: Весна-лето 2016.</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <param name="Цвет">разноцветный</param>
+                <param name="Коллекция">Весна-лето 2016</param>
+                <param name="Сезонность">Лето</param>
+                <param name="Страна-изготовитель">Китай</param>
+                <param name="Размер" unit="UK">46</param>
+                <param name="Пол">Женский</param>
+                <param name="Возраст">Взрослый</param>
+            </offer>
+            <offer available="false" group_id="918931" type="vendor.model" id="MI052EWISL35B120">
+                <url>http://www.lamoda.ua/p/MI052EWISL35/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=MI052EWISL35B120&amp;utm_content=ch_yandex_market__cid_21251569__cat_2626&amp;no_overlay=1</url>
+                <price>757.0</price>
+                <oldprice>1010.0</oldprice>
+                <currencyId>UAH</currencyId>
+                <categoryId>1364</categoryId>
+                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Платья</market_category>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL35_1_v2.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL35_6_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL35_8_v1.jpg</picture>
+                <store>false</store>
+                <pickup>false</pickup>
+                <delivery>true</delivery>
+                <typePrefix>Платье</typePrefix>
+                <vendor>Missi London</vendor>
+                <vendorCode>MC2067</vendorCode>
+                <model>MC2067</model>
+                <description>Платье Missi London. Цвет: мультиколор. Сезон: Весна-лето 2016.</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <param name="Цвет">разноцветный</param>
+                <param name="Коллекция">Весна-лето 2016</param>
+                <param name="Сезонность">Лето</param>
+                <param name="Страна-изготовитель">Китай</param>
+                <param name="Размер" unit="UK">48</param>
+                <param name="Пол">Женский</param>
+                <param name="Возраст">Взрослый</param>
+            </offer>
+            <offer available="false" group_id="918932" type="vendor.model" id="MI052EWISL36INSM">
+                <url>http://www.lamoda.ua/p/MI052EWISL36/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=MI052EWISL36INSM&amp;utm_content=ch_yandex_market__cid_21251569__cat_2626&amp;no_overlay=1</url>
+                <price>550.0</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1364</categoryId>
+                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Платья</market_category>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL36_1_v2.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL36_6_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL36_8_v1.jpg</picture>
+                <store>false</store>
+                <pickup>false</pickup>
+                <delivery>true</delivery>
+                <typePrefix>Платье</typePrefix>
+                <vendor>Missi London</vendor>
+                <vendorCode>MC2153</vendorCode>
+                <model>MC2153</model>
+                <description>Платье Missi London. Цвет: черный. Сезон: Весна-лето 2016.</description>
                 <manufacturer_warranty>true</manufacturer_warranty>
                 <param name="Цвет">черный</param>
                 <param name="Коллекция">Весна-лето 2016</param>
-                <param name="Сезонность">Мульти</param>
-                <param name="Страна-изготовитель">Китай</param>
-                <param name="Размер" unit="INT">44</param>
-                <param name="Пол">Женский</param>
-                <param name="Возраст">Взрослый</param>
-            </offer>
-            <offer available="false" group_id="872757" type="vendor.model" id="AD006EWIHC85INL">
-                <url>http://www.lamoda.ua/p/AD006EWIHC85/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=AD006EWIHC85INL&amp;utm_content=ch_yandex_market__cid_21251569__cat_2993&amp;no_overlay=1</url>
-                <price>250.0</price>
-                <currencyId>UAH</currencyId>
-                <categoryId>1378</categoryId>
-                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Футболки и топы</market_category>
-                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC85_1_v2.jpg</picture>
-                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC85_6_v1.jpg</picture>
-                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC85_7_v1.jpg</picture>
-                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC85_8_v1.jpg</picture>
-                <store>false</store>
-                <pickup>false</pickup>
-                <delivery>true</delivery>
-                <typePrefix>Топ</typePrefix>
-                <vendor>adL</vendor>
-                <vendorCode>11522965005</vendorCode>
-                <model>11522965005</model>
-                <description>Топ adL. Цвет: черный. Сезон: Весна-лето 2016.</description>
-                <manufacturer_warranty>true</manufacturer_warranty>
-                <param name="Цвет">черный</param>
-                <param name="Коллекция">Весна-лето 2016</param>
-                <param name="Сезонность">Мульти</param>
-                <param name="Страна-изготовитель">Китай</param>
-                <param name="Размер" unit="INT">46</param>
-                <param name="Пол">Женский</param>
-                <param name="Возраст">Взрослый</param>
-            </offer>
-            <offer available="false" group_id="872759" type="vendor.model" id="AD006EWIHC87INXS">
-                <url>http://www.lamoda.ua/p/AD006EWIHC87/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=AD006EWIHC87INXS&amp;utm_content=ch_yandex_market__cid_21251569__cat_2993&amp;no_overlay=1</url>
-                <price>311.0</price>
-                <currencyId>UAH</currencyId>
-                <categoryId>1378</categoryId>
-                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Футболки и топы</market_category>
-                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_1_v2.jpg</picture>
-                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_6_v1.jpg</picture>
-                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_7_v1.jpg</picture>
-                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_8_v1.jpg</picture>
-                <store>false</store>
-                <pickup>false</pickup>
-                <delivery>true</delivery>
-                <typePrefix>Топ</typePrefix>
-                <vendor>adL</vendor>
-                <vendorCode>11522965005</vendorCode>
-                <model>11522965005</model>
-                <description>Топ adL. Цвет: синий. Сезон: Весна-лето 2016.</description>
-                <manufacturer_warranty>true</manufacturer_warranty>
-                <param name="Цвет">синий</param>
-                <param name="Коллекция">Весна-лето 2016</param>
-                <param name="Сезонность">Мульти</param>
-                <param name="Страна-изготовитель">Китай</param>
-                <param name="Размер" unit="INT">40</param>
-                <param name="Пол">Женский</param>
-                <param name="Возраст">Взрослый</param>
-            </offer>
-            <offer available="false" group_id="872759" type="vendor.model" id="AD006EWIHC87INS">
-                <url>http://www.lamoda.ua/p/AD006EWIHC87/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=AD006EWIHC87INS&amp;utm_content=ch_yandex_market__cid_21251569__cat_2993&amp;no_overlay=1</url>
-                <price>960.0</price>
-                <currencyId>UAH</currencyId>
-                <categoryId>1378</categoryId>
-                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Футболки и топы</market_category>
-                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_1_v2.jpg</picture>
-                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_6_v1.jpg</picture>
-                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_7_v1.jpg</picture>
-                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_8_v1.jpg</picture>
-                <store>false</store>
-                <pickup>false</pickup>
-                <delivery>true</delivery>
-                <typePrefix>Топ</typePrefix>
-                <vendor>adL</vendor>
-                <vendorCode>11522965005</vendorCode>
-                <model>11522965005</model>
-                <description>Топ adL. Цвет: синий. Сезон: Весна-лето 2016.</description>
-                <manufacturer_warranty>true</manufacturer_warranty>
-                <param name="Цвет">синий</param>
-                <param name="Коллекция">Весна-лето 2016</param>
-                <param name="Сезонность">Мульти</param>
-                <param name="Страна-изготовитель">Китай</param>
+                <param name="Сезонность">Лето</param>
+                <param name="Страна-изготовитель">Великобритания</param>
                 <param name="Размер" unit="INT">42</param>
                 <param name="Пол">Женский</param>
                 <param name="Возраст">Взрослый</param>
             </offer>
-            <offer available="false" group_id="872759" type="vendor.model" id="AD006EWIHC87INM">
-                <url>http://www.lamoda.ua/p/AD006EWIHC87/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=AD006EWIHC87INM&amp;utm_content=ch_yandex_market__cid_21251569__cat_2993&amp;no_overlay=1</url>
-                <price>960.0</price>
+            <offer available="false" group_id="918932" type="vendor.model" id="MI052EWISL36INML">
+                <url>http://www.lamoda.ua/p/MI052EWISL36/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=MI052EWISL36INML&amp;utm_content=ch_yandex_market__cid_21251569__cat_2626&amp;no_overlay=1</url>
+                <price>550.0</price>
                 <currencyId>UAH</currencyId>
-                <categoryId>1378</categoryId>
-                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Футболки и топы</market_category>
-                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_1_v2.jpg</picture>
-                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_6_v1.jpg</picture>
-                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_7_v1.jpg</picture>
-                <picture>http://pn.lmcdn.ru/product/A/D/AD006EWIHC87_8_v1.jpg</picture>
+                <categoryId>1364</categoryId>
+                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Платья</market_category>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL36_1_v2.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL36_6_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL36_8_v1.jpg</picture>
                 <store>false</store>
                 <pickup>false</pickup>
                 <delivery>true</delivery>
-                <typePrefix>Топ</typePrefix>
-                <vendor>adL</vendor>
-                <vendorCode>11522965005</vendorCode>
-                <model>11522965005</model>
-                <description>Топ adL. Цвет: синий. Сезон: Весна-лето 2016.</description>
+                <typePrefix>Платье</typePrefix>
+                <vendor>Missi London</vendor>
+                <vendorCode>MC2153</vendorCode>
+                <model>MC2153</model>
+                <description>Платье Missi London. Цвет: черный. Сезон: Весна-лето 2016.</description>
                 <manufacturer_warranty>true</manufacturer_warranty>
-                <param name="Цвет">синий</param>
+                <param name="Цвет">черный</param>
                 <param name="Коллекция">Весна-лето 2016</param>
-                <param name="Сезонность">Мульти</param>
-                <param name="Страна-изготовитель">Китай</param>
+                <param name="Сезонность">Лето</param>
+                <param name="Страна-изготовитель">Великобритания</param>
                 <param name="Размер" unit="INT">44</param>
+                <param name="Пол">Женский</param>
+                <param name="Возраст">Взрослый</param>
+            </offer>
+            <offer available="false" group_id="918933" type="vendor.model" id="MI052EWISL37INSM">
+                <url>http://www.lamoda.ua/p/MI052EWISL37/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=MI052EWISL37INSM&amp;utm_content=ch_yandex_market__cid_21251569__cat_2626&amp;no_overlay=1</url>
+                <price>550.0</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1364</categoryId>
+                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Платья</market_category>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL37_1_v2.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL37_6_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL37_8_v1.jpg</picture>
+                <store>false</store>
+                <pickup>false</pickup>
+                <delivery>true</delivery>
+                <typePrefix>Платье</typePrefix>
+                <vendor>Missi London</vendor>
+                <vendorCode>MC2153</vendorCode>
+                <model>MC2153</model>
+                <description>Платье Missi London. Цвет: серый. Сезон: Весна-лето 2016.</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <param name="Цвет">серый</param>
+                <param name="Коллекция">Весна-лето 2016</param>
+                <param name="Сезонность">Лето</param>
+                <param name="Страна-изготовитель">Великобритания</param>
+                <param name="Размер" unit="INT">42</param>
+                <param name="Пол">Женский</param>
+                <param name="Возраст">Взрослый</param>
+            </offer>
+            <offer available="false" group_id="918933" type="vendor.model" id="MI052EWISL37INML">
+                <url>http://www.lamoda.ua/p/MI052EWISL37/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=MI052EWISL37INML&amp;utm_content=ch_yandex_market__cid_21251569__cat_2626&amp;no_overlay=1</url>
+                <price>550.0</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1364</categoryId>
+                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Платья</market_category>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL37_1_v2.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL37_6_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL37_8_v1.jpg</picture>
+                <store>false</store>
+                <pickup>false</pickup>
+                <delivery>true</delivery>
+                <typePrefix>Платье</typePrefix>
+                <vendor>Missi London</vendor>
+                <vendorCode>MC2153</vendorCode>
+                <model>MC2153</model>
+                <description>Платье Missi London. Цвет: серый. Сезон: Весна-лето 2016.</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <param name="Цвет">серый</param>
+                <param name="Коллекция">Весна-лето 2016</param>
+                <param name="Сезонность">Лето</param>
+                <param name="Страна-изготовитель">Великобритания</param>
+                <param name="Размер" unit="INT">44</param>
+                <param name="Пол">Женский</param>
+                <param name="Возраст">Взрослый</param>
+            </offer>
+            <offer available="false" group_id="918934" type="vendor.model" id="MI052EWISL38INSM">
+                <url>http://www.lamoda.ua/p/MI052EWISL38/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=MI052EWISL38INSM&amp;utm_content=ch_yandex_market__cid_21251569__cat_2626&amp;no_overlay=1</url>
+                <price>550.0</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1364</categoryId>
+                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Платья</market_category>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL38_1_v2.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL38_6_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL38_7_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL38_8_v1.jpg</picture>
+                <store>false</store>
+                <pickup>false</pickup>
+                <delivery>true</delivery>
+                <typePrefix>Платье</typePrefix>
+                <vendor>Missi London</vendor>
+                <vendorCode>MC2153</vendorCode>
+                <model>MC2153</model>
+                <description>Платье Missi London. Цвет: белый. Сезон: Весна-лето 2016.</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <param name="Цвет">белый</param>
+                <param name="Коллекция">Весна-лето 2016</param>
+                <param name="Сезонность">Лето</param>
+                <param name="Страна-изготовитель">Великобритания</param>
+                <param name="Размер" unit="INT">42</param>
+                <param name="Пол">Женский</param>
+                <param name="Возраст">Взрослый</param>
+            </offer>
+            <offer available="false" group_id="918934" type="vendor.model" id="MI052EWISL38INML">
+                <url>http://www.lamoda.ua/p/MI052EWISL38/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=MI052EWISL38INML&amp;utm_content=ch_yandex_market__cid_21251569__cat_2626&amp;no_overlay=1</url>
+                <price>550.0</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1364</categoryId>
+                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Платья</market_category>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL38_1_v2.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL38_6_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL38_7_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL38_8_v1.jpg</picture>
+                <store>false</store>
+                <pickup>false</pickup>
+                <delivery>true</delivery>
+                <typePrefix>Платье</typePrefix>
+                <vendor>Missi London</vendor>
+                <vendorCode>MC2153</vendorCode>
+                <model>MC2153</model>
+                <description>Платье Missi London. Цвет: белый. Сезон: Весна-лето 2016.</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <param name="Цвет">белый</param>
+                <param name="Коллекция">Весна-лето 2016</param>
+                <param name="Сезонность">Лето</param>
+                <param name="Страна-изготовитель">Великобритания</param>
+                <param name="Размер" unit="INT">44</param>
+                <param name="Пол">Женский</param>
+                <param name="Возраст">Взрослый</param>
+            </offer>
+            <offer available="false" group_id="918935" type="vendor.model" id="MI052EWISL39INML">
+                <url>http://www.lamoda.ua/p/MI052EWISL39/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=MI052EWISL39INML&amp;utm_content=ch_yandex_market__cid_21251569__cat_2626&amp;no_overlay=1</url>
+                <price>550.0</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1364</categoryId>
+                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Платья</market_category>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL39_1_v3.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL39_6_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL39_7_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL39_8_v1.jpg</picture>
+                <store>false</store>
+                <pickup>false</pickup>
+                <delivery>true</delivery>
+                <typePrefix>Платье</typePrefix>
+                <vendor>Missi London</vendor>
+                <vendorCode>MC2153</vendorCode>
+                <model>MC2153</model>
+                <description>Платье Missi London. Цвет: розовый. Сезон: Весна-лето 2016.</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <param name="Цвет">розовый</param>
+                <param name="Коллекция">Весна-лето 2016</param>
+                <param name="Сезонность">Лето</param>
+                <param name="Страна-изготовитель">Великобритания</param>
+                <param name="Размер" unit="INT">44</param>
+                <param name="Пол">Женский</param>
+                <param name="Возраст">Взрослый</param>
+            </offer>
+            <offer available="false" group_id="918936" type="vendor.model" id="MI052EWISL40INSM">
+                <url>http://www.lamoda.ua/p/MI052EWISL40/?utm_medium=pc&amp;utm_source=ym&amp;utm_campaign=lamoda_ua&amp;utm_term=MI052EWISL40INSM&amp;utm_content=ch_yandex_market__cid_21251569__cat_2626&amp;no_overlay=1</url>
+                <price>550.0</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1364</categoryId>
+                <market_category>Одежда, обувь и аксессуары/Женская одежда/Одежда/Платья</market_category>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL40_1_v2.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL40_6_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL40_7_v1.jpg</picture>
+                <picture>http://pn.lmcdn.ru/product/M/I/MI052EWISL40_8_v1.jpg</picture>
+                <store>false</store>
+                <pickup>false</pickup>
+                <delivery>true</delivery>
+                <typePrefix>Платье</typePrefix>
+                <vendor>Missi London</vendor>
+                <vendorCode>MC2151</vendorCode>
+                <model>MC2151</model>
+                <description>Платье Missi London. Цвет: серый. Сезон: Весна-лето 2016.</description>
+                <manufacturer_warranty>true</manufacturer_warranty>
+                <param name="Цвет">серый</param>
+                <param name="Коллекция">Весна-лето 2016</param>
+                <param name="Сезонность">Лето</param>
+                <param name="Страна-изготовитель">Великобритания</param>
+                <param name="Размер" unit="INT">42</param>
                 <param name="Пол">Женский</param>
                 <param name="Возраст">Взрослый</param>
             </offer>
