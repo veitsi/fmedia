@@ -7,8 +7,10 @@ def key2value_str(key, value):
 
 assert key2value_str('_id', 123456) == "'_id':'123456'"
 
+
 def lamoda_pathandfile(url):
     return url[19:]
+
 
 def node2json(node):
     rez = "{"
@@ -23,13 +25,14 @@ def node2json(node):
         if subnode.tag == 'market_category' or subnode.tag == 'typePrefix' or subnode.tag == 'description':
             rez = rez + ',' + key2value_str(subnode.tag, subnode.text)
         elif subnode.tag == 'picture':
+            fp.write(lamoda_pathandfile(subnode.text) + "\n")
             if pictures_mode:
                 rez = rez + ",'" + subnode.text + "'"
             else:
                 pictures_mode = True
-                rez = rez + ",pictures:['" + subnode.text + "'"
+                rez = rez + ",'pictures':['" + subnode.text + "'"
         elif subnode.tag == "param" and len(subnode.keys()) != 2:
-            rez = rez + "," + key2value_str(subnode.values()[0], subnode.text)
+            rez = rez + "," + key2value_str(subnode.values()[0].lower(), subnode.text)
 
     return rez
 
@@ -47,15 +50,17 @@ def issue_price(node):
 
 
 # yml parser
-# tree = etree.parse('database-lamoda.xml')
-tree = etree.parse('minibase-lamoda.xml')
+tree = etree.parse('database-lamoda.xml')
+# tree = etree.parse('minibase-lamoda.xml')
 nodes = tree.xpath('/yml_catalog/shop/offers/offer')
 folded_nodes = {}
 prices = {}
 sizes = {}
 jsons = {}
+issues_count=0
 print(len(nodes))
-fb = open("../server/database.js", "w")
+fb = open("../server/minibase200.js", "w")
+fp = open("pictures.txt", "w")
 fb.write("objects=[\n")
 for i in range(len(nodes)):  # Перебираем элементы
     # fb.write(node2json(nodes[i]))
@@ -65,6 +70,9 @@ for i in range(len(nodes)):  # Перебираем элементы
     current_price = issue_price(nodes[i])
     current_size = issue_size(nodes[i])
     if current not in folded_nodes:
+        issues_count+=1
+        if issues_count>200:
+            break
         folded_nodes[current] = 1
         prices[current] = current_price
         sizes[current] = current_size
@@ -92,3 +100,4 @@ for current in folded_nodes.keys():
 
 fb.write("];")
 fb.close()
+fp.close()

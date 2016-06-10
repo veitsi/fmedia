@@ -25,8 +25,8 @@ def log(msg):
 @app.route('/')
 def hello_world():
     log('we start /')
-    return "hello"
-    #return render_template('index.template.html')
+    #return "hello"
+    return render_template('index.template.html')
 
 
 @app.route('/looks')

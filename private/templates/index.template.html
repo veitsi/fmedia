@@ -30,6 +30,7 @@
     #active {
         border-bottom: 1px solid white;
     }
+
     #canvas {
         position: relative;
         margin: auto;
@@ -60,11 +61,30 @@
     </div>
 </div>
 
+<script src="static/bower_components/lokijs/src/lokijs.js"></script>
+<script src="static/minibase7.js"></script>
 <script src="static/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="static/bower_components/jquery-ui/jquery-ui.min.js"></script>
 <script src="static/html2canvas.js"></script>
 <script>
+    var db = new loki('shopeiro');
+    var shopeiro;
+    var tools_filter={};
+    const tools_max= 4;
+
+    function initDB() {
+        shopeiro = db.addCollection('shopeiro');
+        for (let i = 0; i < objects.length; i++) {
+            shopeiro.insert(objects[i]);
+        }
+    }
+
+    console.log('db=' + db);
+    initDB();
+    var tools=shopeiro.chain().find(tools_filter).limit(tools_max).data();
+    for (let i=0;i<tools.length;i++){console.log(tools[i])};
+
     var modeDrag = true;
     var issuesSelector;
 
