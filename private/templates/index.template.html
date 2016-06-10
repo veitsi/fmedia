@@ -58,7 +58,7 @@
 </div>
 
 <script src="static/bower_components/lokijs/src/lokijs.js"></script>
-<script src="static/minibase7.js"></script>
+<script src="static/minibase200.js"></script>
 <script src="static/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="static/bower_components/jquery-ui/jquery-ui.min.js"></script>
@@ -67,7 +67,7 @@
     var db = new loki('shopeiro');
     var shopeiro;
     var tools_filter = {};
-    const tools_max = 20;
+    const tools_max = 12;
 
     function initDB() {
         shopeiro = db.addCollection('shopeiro');
@@ -93,16 +93,17 @@
         //$(this).clone().draggable().appendTo($('#canvas'));
     }
 
-    function toolsItem(id, src) {
-        rez = '<img id="' + id + '"class="tools-item" src="' +
-                src + '">';
+    function toolsItem(id, src, alt) {
+        rez = '<img id="' + id + '"class="tools-item" src="'+
+        src + '" title="'+alt+'">';
+//        rez='<div>abc</div>';
         return rez;
     }
 
     function updateToolsFilter() {
         for (let i = 0; i < tools.length; i++) {
             $('#tools').append(
-                    toolsItem(tools[i]._id, tools[i].pictures[0]));
+                    toolsItem(tools[i]._id, tools[i].pictures[0],tools[i].description));
             $('#'+tools[i]._id).one("click", addIssue)
         }
     }
