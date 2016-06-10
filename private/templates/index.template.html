@@ -15,7 +15,7 @@
         height: 120px;
         display: inline-block;
         background-color: white;
-        border: 1px black solid;
+        /*border: 1px black solid;*/
     }
 
     li {
@@ -83,16 +83,27 @@
     for (let i = 0; i < tools.length; i++) {
         console.log(tools[i])
     }
-    function toolsItem(id,src){
-        rez='<img id="'+id+'"class="tools-item" src="'+
-                src+'">';
+
+    function addIssue(e) {
+        console.log('in addIssue handler');
+        var newitem = $(this).clone();
+        newitem.appendTo($('#canvas'));
+        newitem.draggable();
+        newitem.dblclick(dragOrResize);
+        //$(this).clone().draggable().appendTo($('#canvas'));
+    }
+
+    function toolsItem(id, src) {
+        rez = '<img id="' + id + '"class="tools-item" src="' +
+                src + '">';
         return rez;
     }
 
     function updateToolsFilter() {
         for (let i = 0; i < tools.length; i++) {
             $('#tools').append(
-                    toolsItem(tools[i]._id,tools[i].pictures[0]));
+                    toolsItem(tools[i]._id, tools[i].pictures[0]));
+            $('#'+tools[i]._id).one("click", addIssue)
         }
     }
 
@@ -122,18 +133,10 @@
         }
     }
     //$('.issues img').draggable();
-    function addIssue(e) {
-        var newitem = $(this).clone();
-        newitem.appendTo($('#canvas'));
-        newitem.draggable();
-        newitem.dblclick(dragOrResize);
-        //$(this).clone().draggable().appendTo($('#canvas'));
-    }
+
 
     $('#top01').one("click", addIssue);
-    $('#down01').one("click", addIssue);
-    $('#shoes01').one("click", addIssue);
-    $('#acc01').one("click", addIssue);
+//
     $('#canvas').resizable();
 
     //            function () {
@@ -163,6 +166,10 @@
 
 </body>
 </html>
+
+<!--$('#down01').one("click", addIssue);-->
+<!--$('#shoes01').one("click", addIssue); -->
+<!--$('#acc01').one("click", addIssue);-->
 
 <!--<img id="down01" src="static/dresses/down01.jpg" style="left: 122px; top: 10px">-->
 <!--<img id="shoes01" src="static/dresses/shoes01.jpg" style="left: 244px; top: 10px">-->
