@@ -50,7 +50,12 @@
         </div>
         <div id="right-side" class="col-sm-5" style="height: 100vh;background-color: #eee">
             <!--menu was here and mooved to bottom-->
-            <form><input id="screen" type="button" value="screen"></form>
+            <form>
+                <input id="screen" type="button" value="screen">
+            </form>
+            <label>maximal price<input id="maxprice" type="text" value="10000"></label>
+            <input type="button" id="filter-submit"
+                   value="filter it" onclick="maxpriceChanged()">
             <div id="tools" style="border-color: black">
                 <!--<img id="top01" src="static/dresses/top01.jpg">-->
             </div><!--end issues div-->
@@ -95,21 +100,32 @@
     }
 
     function toolsItem(id, src, alt) {
-        rez = '<img id="' + id + '"class="tools-item" src="'+
-        src + '" title="'+alt+'">';
+        rez = '<img id="' + id + '"class="tools-item" src="' +
+                src + '" title="' + alt + '">';
 //        rez='<div>abc</div>';
         return rez;
     }
 
     function updateToolsFilter() {
+        console.log('in tools update');
+        $('#tools').empty();
         for (let i = 0; i < tools.length; i++) {
             $('#tools').append(
-                    toolsItem(tools[i]._id, tools[i].pictures[0],tools[i].description));
-            $('#'+tools[i]._id).one("click", addIssue)
+                    toolsItem(tools[i]._id, tools[i].pictures[0], tools[i].description));
+            $('#' + tools[i]._id).one("click", addIssue)
         }
     }
 
     updateToolsFilter();
+
+    function maxpriceChanged() {
+        console.log('max price changed to ' + $('#maxprice').val());
+        tools_filter = {price: {'$lt': parseInt($('#maxprice').val())}};
+        console.log('filter changed to ' + tools_filter.price);
+        tools = shopeiro.chain().find(tools_filter).limit(tools_max).data();
+        updateToolsFilter();
+    }
+    //$('#filter-submit').click(alert('changed'));
 
     var modeDrag = true;
     var issuesSelector;
@@ -134,23 +150,9 @@
             issuesSelector.draggable();
         }
     }
-    //$('.issues img').draggable();
-
-
     $('#top01').one("click", addIssue);
-//
     $('#canvas').resizable();
-
-    //            function () {
-    //        alert("This will be displayed only once.")
-    //    });
-
     //    $('#top02').draggable();
-    //    $('#stop01').draggable();
-    //    $('#down01').draggable();
-    //    $('#shoes01').draggable();
-    //    $('#acc01').draggable();
-
     //http://stackoverflow.com/questions/13198131/how-to-save-a-html5-canvas-as-image-on-a-server
     $('#screen').click(function () {
         alert("screen");
