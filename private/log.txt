@@ -128,3 +128,8 @@
 2016-06-11T15:54:05.549151:we start /
 2016-06-11T15:54:26.586313:we start /
 2016-06-11T15:56:31.215290:we start /
+2016-06-11T16:02:18.312339:we try to save in static/uploads//dctuuqajgnltshczacrw.png
+2016-06-11T16:15:50.542650:we start /
+2016-06-12T15:48:11.375267:we start /
+2016-06-12T15:48:38.128420:we start /
+2016-06-12T16:12:22.373247:we start /
